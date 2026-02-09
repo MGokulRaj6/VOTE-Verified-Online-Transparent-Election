@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a1f35" />
+  <title>VOTE - Verified Online Transparent Election</title>
+  <meta name="description" content="Awareness and demo platform for transparent and secure digital elections in India." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="nav-header">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ashoka Chakra">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="8" fill="currentColor"/>
+          <line x1="62" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="60.39" y1="53.88" x2="92.39" y2="61.18" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="56.39" x2="82.73" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="53.88" y1="60.39" x2="61.18" y2="92.39" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="62" x2="50" y2="94" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="46.12" y1="60.39" x2="38.82" y2="92.39" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="56.39" x2="17.27" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="39.61" y1="53.88" x2="7.61" y2="61.18" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="38" y1="50" x2="6" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="39.61" y1="46.12" x2="7.61" y2="38.82" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="43.61" x2="17.27" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="46.12" y1="39.61" x2="38.82" y2="7.61" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="38" x2="50" y2="6" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="53.88" y1="39.61" x2="61.18" y2="7.61" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="43.61" x2="82.73" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="60.39" y1="46.12" x2="92.39" y2="38.82" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="61.73" y1="51.95" x2="93.73" y2="55.59" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="58.97" y1="55.54" x2="87.9" y2="72.36" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="55.54" y1="58.97" x2="72.36" y2="87.9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="51.95" y1="61.73" x2="55.59" y2="93.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="48.05" y1="61.73" x2="44.41" y2="93.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="44.46" y1="58.97" x2="27.64" y2="87.9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="41.03" y1="55.54" x2="12.1" y2="72.36" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="38.27" y1="51.95" x2="6.27" y2="55.59" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>VOTE</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#procedure">Procedure</a>
+        <a href="#verification">Verification</a>
+        <a href="#apply">Apply</a>
+        <a href="#importance">Importance</a>
+        <a href="#fake-votes">Fake Votes</a>
+        <a href="#punishment">Punishment</a>
+        <a href="#cast-vote">Cast Vote</a>
+        <a href="#results">Live Results</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+        <svg class="icon-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg class="icon-close hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#procedure">Procedure</a>
+      <a href="#verification">Verification</a>
+      <a href="#apply">Apply</a>
+      <a href="#importance">Importance</a>
+      <a href="#fake-votes">Fake Votes</a>
+      <a href="#punishment">Punishment</a>
+      <a href="#cast-vote">Cast Vote</a>
+      <a href="#results">Live Results</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-glow">
+      <div class="glow-orange"></div>
+      <div class="glow-green"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-chakra">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ashoka Chakra">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="8" fill="currentColor"/>
+          <line x1="62" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="60.39" y1="53.88" x2="92.39" y2="61.18" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="56.39" x2="82.73" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="53.88" y1="60.39" x2="61.18" y2="92.39" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="62" x2="50" y2="94" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="46.12" y1="60.39" x2="38.82" y2="92.39" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="56.39" x2="17.27" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="39.61" y1="53.88" x2="7.61" y2="61.18" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="38" y1="50" x2="6" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="39.61" y1="46.12" x2="7.61" y2="38.82" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="43.61" x2="17.27" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="46.12" y1="39.61" x2="38.82" y2="7.61" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="38" x2="50" y2="6" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="53.88" y1="39.61" x2="61.18" y2="7.61" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="43.61" x2="82.73" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="60.39" y1="46.12" x2="92.39" y2="38.82" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="61.73" y1="51.95" x2="93.73" y2="55.59" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="58.97" y1="55.54" x2="87.9" y2="72.36" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="55.54" y1="58.97" x2="72.36" y2="87.9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="51.95" y1="61.73" x2="55.59" y2="93.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="48.05" y1="61.73" x2="44.41" y2="93.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="44.46" y1="58.97" x2="27.64" y2="87.9" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="41.03" y1="55.54" x2="12.1" y2="72.36" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="38.27" y1="51.95" x2="6.27" y2="55.59" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <h1>
+        <span class="orange">VOTE</span>
+        <span class="subtitle">Verified Online Transparent Election</span>
+      </h1>
+      <p class="hero-desc">
+        An awareness and demonstration platform showcasing how secure,
+        transparent digital elections can empower every citizen of India.
+      </p>
+      <div class="hero-disclaimer">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+        </svg>
+        <span>This is a demo &amp; awareness project, not a real voting system.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOTING PROCEDURE ===== -->
+  <section id="procedure" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Voting Procedure</h2>
+      <p class="section-subtitle">A step-by-step guide to the democratic process of casting your vote in Indian elections.</p>
+      <div class="grid-3">
+        <div class="glass-card">
+          <span class="step-number">01</span>
+          <h3 class="step-title">Register as a Voter</h3>
+          <p class="step-desc">Eligible citizens must register with the Election Commission and obtain a valid Voter ID (EPIC card) to participate in elections.</p>
+        </div>
+        <div class="glass-card">
+          <span class="step-number">02</span>
+          <h3 class="step-title">Locate Your Polling Station</h3>
+          <p class="step-desc">Find your designated polling booth using the Election Commission portal or the Voter Helpline app by entering your EPIC number.</p>
+        </div>
+        <div class="glass-card">
+          <span class="step-number">03</span>
+          <h3 class="step-title">Identity Verification</h3>
+          <p class="step-desc">On election day, visit your polling station with a valid photo ID. Officials verify your identity against the electoral roll.</p>
+        </div>
+        <div class="glass-card">
+          <span class="step-number">04</span>
+          <h3 class="step-title">Cast Your Vote</h3>
+          <p class="step-desc">Enter the voting booth, use the Electronic Voting Machine (EVM) to cast your secret ballot, and collect the VVPAT slip for verification.</p>
+        </div>
+        <div class="glass-card">
+          <span class="step-number">05</span>
+          <h3 class="step-title">Indelible Ink Mark</h3>
+          <p class="step-desc">After voting, your finger is marked with indelible ink to prevent duplicate voting. The ink lasts for several days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3-STEP VERIFICATION DEMO ===== -->
+  <section id="verification" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">3-Step Verification Demo</h2>
+      <p class="section-subtitle">Experience a simulated multi-factor voter verification process designed for security and transparency.</p>
+
+      <!-- Step indicators -->
+      <div class="step-indicators">
+        <div class="step-circle active" id="stepCircle1">1</div>
+        <div class="step-line" id="stepLine1"></div>
+        <div class="step-circle" id="stepCircle2">2</div>
+        <div class="step-line" id="stepLine2"></div>
+        <div class="step-circle" id="stepCircle3">3</div>
+      </div>
+
+      <div class="verification-form">
+        <!-- Step 1: Voter ID -->
+        <div class="glass-card" id="verifyStep1">
+          <div class="form-header">
+            <div class="form-icon orange">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0"/>
+              </svg>
+            </div>
+            <div>
+              <div class="form-label-title">Step 1: Voter ID Verification</div>
+              <div class="form-label-sub">Enter your EPIC number</div>
+            </div>
+          </div>
+          <input type="text" class="input-field" id="voterIdInput" placeholder="e.g. ABC1234567" />
+          <p class="error-msg hidden" id="voterIdError">Please enter a valid Voter ID (min 6 characters).</p>
+          <button class="btn btn-orange" id="verifyIdBtn">Verify Voter ID</button>
+        </div>
+
+        <!-- Step 2: OTP -->
+        <div class="glass-card hidden" id="verifyStep2">
+          <div class="form-header">
+            <div class="form-icon green">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="form-label-title">Step 2: OTP Verification</div>
+              <div class="form-label-sub">Enter the 6-digit code sent to your phone</div>
+            </div>
+          </div>
+          <div class="demo-hint">Demo: Use any 6-digit number (e.g. 123456)</div>
+          <input type="text" class="input-field otp" id="otpInput" placeholder="Enter 6-digit OTP" maxlength="6" />
+          <p class="error-msg hidden" id="otpError">Please enter a valid 6-digit OTP.</p>
+          <button class="btn btn-green" id="verifyOtpBtn">Verify OTP</button>
+        </div>
+
+        <!-- Step 3: Face Verification -->
+        <div class="glass-card hidden" id="verifyStep3">
+          <div class="form-header">
+            <div class="form-icon blue">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="form-label-title">Step 3: Face / AI Verification</div>
+              <div class="form-label-sub">Simulated biometric check</div>
+            </div>
+          </div>
+          <div class="face-placeholder">
+            <div class="face-circle">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <p>In a real system, your camera would capture your face for AI-based identity matching.</p>
+          </div>
+          <button class="btn btn-blue" id="verifyFaceBtn">Simulate Face Verification</button>
+        </div>
+
+        <!-- Success state -->
+        <div class="glass-card hidden" id="verifySuccess">
+          <div class="success-state">
+            <div class="success-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3>Verification Complete</h3>
+            <p>All 3 steps verified successfully. In a real system, you would now proceed to cast your vote.</p>
+            <button class="btn-outline" id="verifyResetBtn">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOTER ID APPLY PORTAL ===== -->
+  <section id="apply" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Voter ID Apply Portal</h2>
+      <p class="section-subtitle">A demo form showcasing the Voter ID application process. No real data is collected or stored.</p>
+
+      <div class="apply-form">
+        <!-- The form -->
+        <div class="glass-card" id="applyForm">
+          <form id="voterApplyForm" novalidate>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="input-field" id="fullName" placeholder="Enter your full name" />
+              <p class="error-msg hidden" id="fullNameError"></p>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="input-field" id="dob" />
+                <p class="error-msg hidden" id="dobError"></p>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="input-field" id="gender">
+                  <option value="">Select gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+                <p class="error-msg hidden" id="genderError"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <textarea class="input-field" id="address" placeholder="Enter your full address" rows="3"></textarea>
+              <p class="error-msg hidden" id="addressError"></p>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="input-field" id="state" placeholder="e.g. Maharashtra" />
+                <p class="error-msg hidden" id="stateError"></p>
+              </div>
+              <div class="form-group">
+                <label for="pincode">Pincode</label>
+                <input type="text" class="input-field" id="pincode" placeholder="6-digit pincode" maxlength="6" />
+                <p class="error-msg hidden" id="pincodeError"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Upload ID Proof (Demo)</label>
+              <div class="upload-area">
+                <div class="upload-area-inner">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  </svg>
+                  <p>Click to upload (UI only, no file stored)</p>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-orange">Submit Application (Demo)</button>
+          </form>
+        </div>
+
+        <!-- Success state -->
+        <div class="glass-card hidden" id="applySuccess">
+          <div class="success-state">
+            <div class="success-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3>Application Submitted</h3>
+            <p>This is a demo submission. In a real system, your application would be sent to the Election Commission for processing.</p>
+            <button class="btn-outline" id="applyResetBtn">Submit Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IMPORTANCE OF VOTING ===== -->
+  <section id="importance" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Importance of Voting</h2>
+      <p class="section-subtitle">Understanding why every vote matters in building a stronger, more equitable nation.</p>
+      <div class="grid-2">
+        <div class="glass-card">
+          <div class="importance-card">
+            <div class="importance-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm0 0h14"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="importance-title">Foundation of Democracy</h3>
+              <p class="importance-desc">Voting is the cornerstone of any democracy. It gives citizens the power to choose their leaders and influence government policies that affect their daily lives.</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="importance-card">
+            <div class="importance-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="importance-title">Voice of the People</h3>
+              <p class="importance-desc">Every single vote counts. Your vote is your voice in deciding who represents you, how public funds are spent, and what direction your community takes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="importance-card">
+            <div class="importance-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="importance-title">Accountability &amp; Governance</h3>
+              <p class="importance-desc">When citizens actively vote, elected officials are held accountable. Higher voter turnout leads to better governance and more responsive leaders.</p>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card">
+          <div class="importance-card">
+            <div class="importance-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="importance-title">Social Responsibility</h3>
+              <p class="importance-desc">Voting is both a right and a duty. Citizens who choose not to vote risk allowing others to determine their future. Be the change you wish to see.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAKE VOTE AWARENESS ===== -->
+  <section id="fake-votes" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Fake Vote Awareness</h2>
+      <p class="section-subtitle">Understand common threats to electoral integrity and how the system guards against them.</p>
+      <div class="grid-3">
+        <div class="glass-card">
+          <div class="warning-header">
+            <div class="warning-dot">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <h3 class="warning-title">Bogus Voting / Booth Capturing</h3>
+          </div>
+          <p class="warning-desc">Forcibly taking control of a polling station and casting fake votes is a serious criminal offence. Modern EVMs and CCTV surveillance have made this increasingly difficult.</p>
+        </div>
+        <div class="glass-card">
+          <div class="warning-header">
+            <div class="warning-dot">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <h3 class="warning-title">Impersonation</h3>
+          </div>
+          <p class="warning-desc">Voting in someone else's name is voter fraud. The Election Commission uses photo ID verification, indelible ink, and biometric checks to prevent impersonation.</p>
+        </div>
+        <div class="glass-card">
+          <div class="warning-header">
+            <div class="warning-dot">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <h3 class="warning-title">Duplicate Voter Registration</h3>
+          </div>
+          <p class="warning-desc">Registering under multiple names or at multiple addresses to cast more than one vote is illegal. The EPIC database is cross-verified to detect duplicates.</p>
+        </div>
+        <div class="glass-card">
+          <div class="warning-header">
+            <div class="warning-dot">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <h3 class="warning-title">Vote Buying &amp; Bribery</h3>
+          </div>
+          <p class="warning-desc">Offering or accepting money, gifts, or favours in exchange for votes is a criminal offence. Report such activities to the Election Commission immediately.</p>
+        </div>
+        <div class="glass-card">
+          <div class="warning-header">
+            <div class="warning-dot">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <h3 class="warning-title">Spreading Misinformation</h3>
+          </div>
+          <p class="warning-desc">Circulating false information about candidates, polling dates, or voting procedures on social media or otherwise undermines democracy and may be punishable by law.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PUNISHMENT ===== -->
+  <section id="punishment" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Punishment for Fake Voting</h2>
+      <p class="section-subtitle">Legal consequences under Indian law for electoral fraud and malpractice.</p>
+      <div class="grid-2">
+        <div class="glass-card">
+          <div class="law-header">
+            <div class="law-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 01-6.001 0M18 7l-3 9m0-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="law-section">Section 171F</span>
+              <h3 class="law-title">Undue Influence at Elections</h3>
+            </div>
+          </div>
+          <span class="law-penalty">Up to 1 year imprisonment or fine, or both</span>
+          <p class="law-desc">Any voluntary interference or attempt to interfere with the free exercise of electoral right is punishable under the Indian Penal Code.</p>
+        </div>
+        <div class="glass-card">
+          <div class="law-header">
+            <div class="law-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 01-6.001 0M18 7l-3 9m0-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="law-section">Section 171C</span>
+              <h3 class="law-title">Bribery in Elections</h3>
+            </div>
+          </div>
+          <span class="law-penalty">Up to 1 year imprisonment or fine, or both</span>
+          <p class="law-desc">Giving or accepting any gratification as a motive or reward for voting or refraining from voting is a criminal offence.</p>
+        </div>
+        <div class="glass-card">
+          <div class="law-header">
+            <div class="law-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 01-6.001 0M18 7l-3 9m0-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="law-section">Section 135A</span>
+              <h3 class="law-title">Booth Capturing</h3>
+            </div>
+          </div>
+          <span class="law-penalty">Minimum 1 year, up to 3 years imprisonment + fine</span>
+          <p class="law-desc">Seizing a polling station, taking possession of EVMs, or threatening voters and polling officers is severely punishable under the RP Act, 1951.</p>
+        </div>
+        <div class="glass-card">
+          <div class="law-header">
+            <div class="law-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l3 9a5.002 5.002 0 01-6.001 0M18 7l-3 9m0-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="law-section">Section 171D</span>
+              <h3 class="law-title">Personation at Elections</h3>
+            </div>
+          </div>
+          <span class="law-penalty">Up to 1 year imprisonment or fine, or both</span>
+          <p class="law-desc">Applying for a ballot paper or voting in the name of another person, whether living, dead, or fictitious, is an offence under the IPC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAST YOUR VOTE ===== -->
+  <section id="cast-vote" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Cast Your Vote</h2>
+      <p class="section-subtitle">Select your constituency and choose a party. Your vote will update the Live Results dashboard in real-time. (Demo only)</p>
+
+      <div class="vote-container">
+        <!-- Voting form -->
+        <div class="glass-card vote-form-card" id="voteFormCard">
+          <!-- State selector -->
+          <div class="form-group">
+            <label for="voteState">Select State</label>
+            <select class="input-field" id="voteState">
+              <option value="">-- Choose a State --</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+            </select>
+          </div>
+
+          <!-- Constituency selector (shown after state) -->
+          <div class="form-group hidden" id="constituencyGroup">
+            <label for="voteConstituency">Select Constituency</label>
+            <select class="input-field" id="voteConstituency">
+              <option value="">-- Choose a Constituency --</option>
+            </select>
+          </div>
+
+          <!-- Party selection -->
+          <div class="hidden" id="partySelection">
+            <label class="vote-label">Choose Your Party</label>
+            <div class="party-options" id="partyOptions">
+              <!-- Populated by JS based on state -->
+            </div>
+          </div>
+
+          <!-- Ink finger demo hint -->
+          <div class="demo-hint" style="margin-top:1rem;">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;display:inline;vertical-align:text-bottom;margin-right:4px;">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+            </svg>
+            Demo: Your vote updates the Live Results section below. No real data is stored.
+          </div>
+
+          <!-- Submit vote -->
+          <button class="btn btn-orange hidden" id="castVoteBtn" disabled>Cast Your Vote</button>
+          <p class="error-msg hidden" id="voteError">Please select a state, constituency, and party before voting.</p>
+        </div>
+
+        <!-- Success state -->
+        <div class="glass-card hidden" id="voteSuccessCard">
+          <div class="success-state">
+            <div class="vote-success-icon">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3>Vote Recorded!</h3>
+            <p id="voteSuccessMsg">Your vote has been recorded. Check the Live Results section to see the updated tally.</p>
+            <div class="ink-badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+              <span>Indelible Ink Applied</span>
+            </div>
+            <button class="btn-outline" id="voteAgainBtn">Vote Again (Demo)</button>
+          </div>
+        </div>
+
+        <!-- Live vote feed -->
+        <div class="glass-card vote-feed-card">
+          <h3 class="results-card-title">
+            <span class="pulse-dot" style="display:inline-block;width:8px;height:8px;margin-right:6px;vertical-align:middle;"></span>
+            Recent Votes
+          </h3>
+          <div class="vote-feed" id="voteFeed">
+            <div class="vote-feed-empty">No votes cast yet. Be the first!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIVE RESULTS ===== -->
+  <section id="results" class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Live Election Results</h2>
+      <p class="section-subtitle">Simulated real-time election results dashboard. Data is fictional and for demonstration purposes only.</p>
+
+      <!-- Live stats bar -->
+      <div class="results-stats-bar">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="stat-label">Total Votes Cast</span>
+            <span class="stat-value" id="totalVotesCount">0</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon green-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="stat-label">Voter Turnout</span>
+            <span class="stat-value" id="turnoutPercent">0%</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon blue-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <div>
+            <span class="stat-label">Constituencies Declared</span>
+            <span class="stat-value" id="constituenciesCount">0 / 543</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon orange-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="stat-label">Last Updated</span>
+            <span class="stat-value" id="lastUpdatedTime">--:--</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live pulse indicator -->
+      <div class="live-indicator">
+        <span class="pulse-dot"></span>
+        <span>LIVE - Counting in progress</span>
+      </div>
+
+      <!-- Party-wise results -->
+      <div class="results-main">
+        <!-- Bar chart area -->
+        <div class="glass-card results-chart-card">
+          <h3 class="results-card-title">Party-wise Seat Tally</h3>
+          <div class="majority-line-label">Majority: 272</div>
+          <div class="bar-chart" id="barChart">
+            <div class="bar-row">
+              <span class="bar-party-name">NDA</span>
+              <div class="bar-track">
+                <div class="bar-fill nda-fill" id="barNDA" style="width:0%"></div>
+              </div>
+              <span class="bar-count" id="countNDA">0</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-party-name">INDIA</span>
+              <div class="bar-track">
+                <div class="bar-fill india-fill" id="barINDIA" style="width:0%"></div>
+              </div>
+              <span class="bar-count" id="countINDIA">0</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-party-name">TVK</span>
+              <div class="bar-track">
+                <div class="bar-fill tvk-fill" id="barTVK" style="width:0%"></div>
+              </div>
+              <span class="bar-count" id="countTVK">0</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-party-name">Others</span>
+              <div class="bar-track">
+                <div class="bar-fill others-fill" id="barOthers" style="width:0%"></div>
+              </div>
+              <span class="bar-count" id="countOthers">0</span>
+            </div>
+          </div>
+          <div class="majority-marker" id="majorityMarker">
+            <div class="majority-line"></div>
+          </div>
+        </div>
+
+        <!-- Leading parties table -->
+        <div class="glass-card results-table-card">
+          <h3 class="results-card-title">Top Parties</h3>
+          <div class="results-table-wrap">
+            <table class="results-table" id="partyTable">
+              <thead>
+                <tr>
+                  <th>Party</th>
+                  <th>Won</th>
+                  <th>Leading</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="partyTableBody">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- State-wise breakdown -->
+      <div class="glass-card results-states-card">
+        <h3 class="results-card-title">State-wise Breakdown</h3>
+        <div class="states-grid" id="statesGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <!-- Disclaimer -->
+      <div class="results-disclaimer">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
+        </svg>
+        <span>All election data shown above is simulated for demonstration. For real election results, visit the <strong>Election Commission of India</strong> website.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-label="Ashoka Chakra">
+          <circle cx="50" cy="50" r="46" stroke="currentColor" stroke-width="2"/>
+          <circle cx="50" cy="50" r="8" fill="currentColor"/>
+          <line x1="62" y1="50" x2="94" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="56.39" x2="82.73" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="62" x2="50" y2="94" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="56.39" x2="17.27" y2="82.73" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="38" y1="50" x2="6" y2="50" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="43.61" y1="43.61" x2="17.27" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="50" y1="38" x2="50" y2="6" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="56.39" y1="43.61" x2="82.73" y2="17.27" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>VOTE</span>
+      </div>
+      <p class="footer-text">
+        Verified Online Transparent Election is an awareness and demonstration project. It does not collect, store, or process any real voter data. No real elections are conducted through this platform.
+      </p>
+      <div class="tricolor-bar">
+        <span class="bar-orange"></span>
+        <span class="bar-white"></span>
+        <span class="bar-green"></span>
+      </div>
+      <p class="footer-credit">Made with pride for India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
